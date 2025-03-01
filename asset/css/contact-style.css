@@ -43,6 +43,9 @@
 .social-icons .spotify:hover {
     color: #1ED760;
 }
+.social-icons .linkedin:hover {
+    color: #0077B5;
+}
 .social-icons a {
     text-decoration: none;
     color: #333;
