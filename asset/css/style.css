@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: #DDE6ED;
+    background-color: #1E1E1E;
     color: #333;
     line-height: 1.6;
 }
@@ -35,7 +35,7 @@ body {
 
 
 nav {
-  background-color: #DDE6ED;
+  background-color: #FBF8EF;
   padding: 5px 5%;
   display: flex;
   justify-content: space-between;
@@ -167,7 +167,7 @@ nav ul li a:hover {
 }
 
 .contact { 
-  background-color: #6CA664;
+  background-color: #FD6F00;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -180,7 +180,7 @@ nav ul li a:hover {
 }
 
 .contact:hover {
-  background-color: #5B8F58;
+  background-color: #FFB433;
   color: white;
   text-decoration: none;
 }
@@ -234,28 +234,28 @@ background-color: #FFEB00;
 
 .profile-content h2 {
     font-size: 2.9rem;
-    color: #6CA664;
+    color: #FBF8EF;
     font-family: "Concert One";
     line-height: 1.8rem;
 }
 
 .profile-content h3 {
     font-size: 2.6rem;
-    color: #7289DA;
+    color: #FBF8EF;
     margin: 10px 0;
     font-family: "Candal";
     line-height: 2.7rem;
 }
 .profile-content h1 {
     font-size: 3.1rem;
-    color: black;
+    color: #FBF8EF;
     margin: 10px 0;
     font-family: "Dangrek";
 }
 
 .profile-content span {
   font-size: 3.1rem;
-    color: black;
+    color: #FD6F00;
     margin: 10px 0;
     font-family: "Dangrek";
 }
@@ -263,7 +263,7 @@ background-color: #FFEB00;
 .profile-content p {
     margin: 20px 0;
     font-size: 16px;
-    color: #666;
+    color: #FBF8EF;
     font-family: "Poppins";
     font-style: italic;
 }
@@ -271,7 +271,7 @@ background-color: #FFEB00;
 
 
 .discord-button {
-    background-color: #597E52;
+    background-color: #FD6F00;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -282,10 +282,10 @@ background-color: #FFEB00;
 }
 
 .discord-button:hover {
-    background-color: #5B8F58;
+    background-color: #FFB433;
 }
 .discord-button:active {
-    background-color: #7289DA;
+    background-color: #FFEB00;
 }
 
 @media (max-width: 768px) {
@@ -345,11 +345,22 @@ background-color: #FFEB00;
   
   .text-section h1 {
     font-size: 3rem;
-    color: #4A6A3F;
+    color: #FD6F00;
     margin-bottom: 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-underline-offset: 12px;
     font-family:"Concert One";
+  }
+
+  .text-section h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #FD6F00;
+    margin-top: 1px;
+    /* margin: 1px auto; */
+    margin-bottom: 20px;
   }
   
   .text-section h2 {
@@ -394,7 +405,7 @@ background-color: #FFEB00;
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #597E52;
+    background-color: #FD6F00;
     color: #fff;
     font-size: 18px;
     text-decoration: none;
@@ -404,11 +415,11 @@ background-color: #FFEB00;
   }
   
   .discord-btn:hover {
-    background-color: #5B8F58;
+    background-color: #FFB433;
   }
 
   .discord-btn:active {
-    background-color: #7289DA;
+    background-color: #FFEB00;
   }
   
   @media (max-width: 768px) {
@@ -441,15 +452,26 @@ background-color: #FFEB00;
   
   .section-title {
     font-size: 3rem;
-    color: #4A6A3F;
-    text-decoration: underline;
+    color: #FD6F00;
+    /* text-decoration: underline; */
     text-underline-offset: 6px;
     font-family:"Concert One";
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background-color: #FD6F00;
+    margin-top: 1px;
+    margin: 1px auto;
+    margin-bottom: 20px;
   }
   
   .section-subtitle {
     font-size: 1.2rem;
-    color: #555;
+    color: #FBF8EF;
     margin-bottom: 20px;
     font-family: "Poppins";
     font-style: ita;
@@ -475,7 +497,7 @@ background-color: #FFEB00;
 }
 
 .education-card:hover {
-    box-shadow: 0 4px 7px #7886C7;
+    box-shadow: 0 4px 7px #FD6F00;
 }
 
 .education-photo {
@@ -534,14 +556,16 @@ background-color: #FFEB00;
     text-align: center;
     font-size: 3.5rem;
     font-weight: bold;
-    color: #4A6A3F;
+    color: #FD6F00;
     margin-top: 30px;
     font-family:"Concert One";
   }
   
+  
+
   .certificate-section p {
     font-size: 1.2rem;
-    color: #555;
+    color: #FBF8EF;
     margin-bottom: 50px;
     text-align: center;
     font-family: "Poppins";
@@ -551,9 +575,9 @@ background-color: #FFEB00;
   .certificate-section h1::after {
     content: "";
     display: block;
-    width: 70px;
+    width: 130px;
     height: 2px;
-    background-color: #4A6A3F;
+    background-color: #FD6F00;
     margin-top: 1px;
     margin: 1px auto;
     margin-bottom: 20px;
@@ -585,7 +609,7 @@ background-color: #FFEB00;
   .title {
     font-size: 3rem;
     font-weight: bold;
-    color: #4A6A3F;
+    color: #FD6F00;
     margin-top: 30px;
     font-family:"Concert One";
     position: relative;
@@ -597,14 +621,14 @@ background-color: #FFEB00;
     display: block;
     width: 50px;
     height: 2px;
-    background-color: #4A6A3F;
+    background-color: #FD6F00;
     margin: 2px auto;
     margin-bottom: 10px;
   }
   
   .sub-title {
     font-size: 1.2rem;
-    color: #555;
+    color: #FBF8EF;
     
     margin-bottom: 50px;
     text-align: center;
@@ -662,7 +686,7 @@ background-color: #FFEB00;
   text-align: center;
   margin-top: 70px;
   font-family:"Concert One";
-  color: #4A6A3F;
+  color: #FD6F00;
   font-size: 3rem;
 }
 
@@ -671,7 +695,7 @@ background-color: #FFEB00;
   display: block;
   width: 70px;
   height: 3px;
-  background-color: #4A6A3F;
+  background-color: #FD6F00;
   margin: 1px auto;
   margin-bottom: 20px;
 
@@ -682,7 +706,7 @@ background-color: #FFEB00;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 1.2rem;
-    color: #555;
+    color: #FBF8EF;
     margin-bottom: 50px;
 }
 .container-project {
@@ -693,7 +717,7 @@ background-color: #FFEB00;
 }
 
 .card {
-  background: #1e1e1e;
+  background: #FBF8EF;
   padding: 20px;
   border-radius: 10px;
   width: 350px;
@@ -716,19 +740,19 @@ background-color: #FFEB00;
 }
 
 .card P {
-  color: white;
+  color: #1E1E1E;
   font-size: 1rem;
   text-align: justify;
 }
 
 .card a {
-  color: white;
+  color: #1E1E1E;
   text-decoration: none;
   transition: color 0.4s ease-in-out;
 }
 
 .card a:hover {
-  color: #9F8383;
+  color: #FD6F00;
 }
 
 .card span {
@@ -778,7 +802,8 @@ background-color: #FFEB00;
 
 .chat-button button {
   padding: 10px 20px;
-  background-color: #6CA664;
+  background-color: #FD6F00;
+  color: #FBF8EF;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -789,7 +814,7 @@ background-color: #FFEB00;
 }
 
 .chat-button button:hover {
-  background-color: #5B8F58;
+  background-color: #FFB433;
   transform: scale(1.1);
 }
 .chat-button button:active {
@@ -821,16 +846,16 @@ background-color: #FFEB00;
 }
 
 .footer-container a {
-  color: #416D19;
+  color: #FD6F00;
   font-family: 'Darumadrop One';
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
 
 .credits {
-  transition: transform 0.3s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .credits:hover {
-  color: #c32aa3;
+  color: #FFEB00;
 }
