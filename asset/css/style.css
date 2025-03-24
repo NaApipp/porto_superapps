@@ -758,7 +758,38 @@ background-color: #FFEB00;
 .card span {
   font-family: "Darumadrop One";
 }
+.btn-project {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
+.btn-project button {
+  padding: 10px 20px;
+  background-color: #FD6F00;
+  color: #FBF8EF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Poppins";
+  gap: 20px;
+}
+.btn-project button:hover {
+  background-color: #FFB433;
+  transform: scale(1.1);
+}
+.btn-project button:active {
+  background-color: #FFEB00 ;
+}
+
+@media (max-width: 768px) {
+  .btn-project button {
+    font-size: 20px;
+  }
+}
 /*CHAT TO DISCORD*/
 .chat-dc {
   display: flex;
