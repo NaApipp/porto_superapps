@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
 function redirectToDiscord() {
   window.location.href = "./contact.html"; 
 }
+
+
+// Tunggu sampai halaman selesai dimuat
+window.addEventListener("load", function() {
+  let preloader = document.getElementById("preloader");
+  let content = document.getElementById("content");
+
+  // Sembunyikan preloader setelah 1.5 detik
+  setTimeout(function() {
+      preloader.style.display = "none";
+      content.style.display = "block";
+  }, 1500);
+});
