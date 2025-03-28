@@ -19,14 +19,12 @@ function redirectToDiscord() {
 }
 
 
-// Tunggu sampai halaman selesai dimuat
-window.addEventListener("load", function() {
-  let preloader = document.getElementById("preloader");
-  let content = document.getElementById("content");
-
-  // Sembunyikan preloader setelah 1.5 detik
-  setTimeout(function() {
-      preloader.style.display = "none";
-      content.style.display = "block";
-  }, 1500);
+window.addEventListener("load", function () {
+  setTimeout(function () {
+      document.getElementById("preloader").style.opacity = "0";
+      setTimeout(function () {
+          document.getElementById("preloader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+      }, 500); // Biarkan efek fade out berjalan sebelum menghilangkan elemen
+  }, 1000); // Tambahkan jeda 1 detik sebelum menghilangkan preloader
 });
