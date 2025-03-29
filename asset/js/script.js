@@ -18,7 +18,7 @@ function redirectToDiscord() {
   window.location.href = "./contact.html"; 
 }
 
-
+// Script Preloader
 window.addEventListener("load", function () {
   setTimeout(function () {
       document.getElementById("preloader").style.opacity = "0";
@@ -28,3 +28,6 @@ window.addEventListener("load", function () {
       }, 500); // Biarkan efek fade out berjalan sebelum menghilangkan elemen
   }, 1000); // Tambahkan jeda 1 detik sebelum menghilangkan preloader
 });
+
+
+//
