@@ -472,7 +472,7 @@ background-color: #FFEB00;
   
   @media (max-width: 768px) {
     .container-identitas {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
     }
   
